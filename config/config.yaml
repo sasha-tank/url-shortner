@@ -1,0 +1,16 @@
+env: local
+
+http_server:
+  address: 0.0.0.0:8080
+
+grpc_server:
+  address: 0.0.0.0:8090
+
+short_links_address: "http://graceful.link.shortener/"
+
+url_generator:
+  url_length: 10
+  allowed_symbols: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+
+db:
+  dsn: "user=ozon dbname=ush_db password=root sslmode=disable host=db port=5432"
